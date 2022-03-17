@@ -1,0 +1,56 @@
+.card-ribbon {
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // background: #071C4D;
+    // color: #FFF;
+    // padding: 10px 30px;
+    // border-bottom-left-radius: 20px;
+
+    // position: absolute;
+    // overflow: hidden;
+    // top: -1px;
+    // right: 0;
+    // width: 114px;
+    // height: 112px;
+
+    // span {
+    //     position: absolute;
+    //     display: block;
+    //     width: 160px;
+    //     padding: 10px 0;
+    //     background-color: #3498db;
+    //     color: #fff;
+    //     font-size: 13px;
+    //     text-transform: uppercase;
+    //     text-align: center;
+    //     left: -13px;
+    //     top: 15px;
+    //     transform: rotate(40deg);
+    // }
+
+    position: absolute;
+	top: 0.75rem;
+	right: -1rem;
+	padding: 0.5rem 0.75rem;
+	text-align: center;
+	color: #ECEFF1;
+	background: #071C4D;
+	width: 8rem;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: -1rem;
+        bottom: -1rem;
+        width: 0;
+        height: 0;
+        border-left: 1rem solid #071C4D;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid transparent;
+        border-top:  1rem solid transparent;
+        clear: both;
+        z-index: -1;
+    }
+}
