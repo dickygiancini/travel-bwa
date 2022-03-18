@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/buttons', function() {
     return view('pages.admin.buttons');
 })->name('buttons');
+
+Route::get('/cards', function() {
+    return view('pages.admin.cards');
+})->name('cards');
