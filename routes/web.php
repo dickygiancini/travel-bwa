@@ -40,3 +40,7 @@ Route::get('/animations', function() {
 Route::get('/other', function() {
     return view('pages.admin.utilities.other');
 })->name('other');
+
+Route::get('/tables', function() {
+    return view('pages.admin.addons.tables');
+})->name('tables');
