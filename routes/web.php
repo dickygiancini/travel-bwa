@@ -18,9 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/buttons', function() {
-    return view('pages.admin.buttons');
+    return view('pages.admin.components.buttons');
 })->name('buttons');
 
 Route::get('/cards', function() {
-    return view('pages.admin.cards');
+    return view('pages.admin.components.cards');
 })->name('cards');
+
+Route::get('/colors', function() {
+    return view('pages.admin.utilities.colors');
+})->name('colors');
