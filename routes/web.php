@@ -28,3 +28,7 @@ Route::get('/cards', function() {
 Route::get('/colors', function() {
     return view('pages.admin.utilities.colors');
 })->name('colors');
+
+Route::get('/borders', function() {
+    return view('pages.admin.utilities.borders');
+})->name('borders');
