@@ -56,8 +56,8 @@
                 <h6 class="collapse-header">Custom Utilities:</h6>
                 <a class="collapse-item" href="{{ route('colors') }}">Colors</a>
                 <a class="collapse-item" href="{{ route('borders') }}">Borders</a>
-                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                <a class="collapse-item" href="utilities-other.html">Other</a>
+                <a class="collapse-item" href="{{ route('animations') }}">Animations</a>
+                <a class="collapse-item" href="{{ route('other') }}">Other</a>
             </div>
         </div>
     </li>

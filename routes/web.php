@@ -32,3 +32,11 @@ Route::get('/colors', function() {
 Route::get('/borders', function() {
     return view('pages.admin.utilities.borders');
 })->name('borders');
+
+Route::get('/animations', function() {
+    return view('pages.admin.utilities.animations');
+})->name('animations');
+
+Route::get('/other', function() {
+    return view('pages.admin.utilities.other');
+})->name('other');
