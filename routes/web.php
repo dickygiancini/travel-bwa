@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/dashboard');
+Route::get('/', function () {
+    return view('pages.visitor.index');
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('pages.admin.dashboard');
