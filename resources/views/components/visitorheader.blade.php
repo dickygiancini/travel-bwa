@@ -3,7 +3,7 @@
     <nav class="row navbar navbar-light navbar-expand-lg bg-white">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="assets/img/baal_logo.png" alt="logo.png" />
+                <img src="{{ asset('visitor/img/baal_logo.png') }}" alt="logo.png" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
