@@ -13,4 +13,14 @@ class DashboardController extends Controller
     {
         return view('pages.admin.dashboard');
     }
+
+    public function buttons()
+    {
+        return view('pages.admin.components.buttons');
+    }
+
+    public function cards()
+    {
+        return view('pages.admin.components.cards');
+    }
 }

@@ -24,14 +24,8 @@ Route::get('/detail', function () {
 Route::as('admin.')->group(function() {
 
     Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
-
-    Route::get('buttons', function() {
-        return view('pages.admin.components.buttons');
-    })->name('buttons');
-
-    Route::get('cards', function() {
-        return view('pages.admin.components.cards');
-    })->name('cards');
+    Route::get('buttons', [\App\Http\Controllers\Admin\DashboardController::class, 'buttons'])->name('buttons');
+    Route::get('cards', [\App\Http\Controllers\Admin\DashboardController::class, 'cards'])->name('cards');
 
     Route::get('colors', function() {
         return view('pages.admin.utilities.colors');
