@@ -1,5 +1,7 @@
 @extends('templates.main')
 
+@section('title', 'Animations')
+
 @section('content')
 
     <!-- Page Heading -->

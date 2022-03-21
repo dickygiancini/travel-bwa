@@ -1,5 +1,7 @@
 @extends('templates.main')
 
+@section('title', 'Borders')
+
 @section('content')
 <!-- Page Heading -->
 <h1 class="h3 mb-1 text-gray-800">Border Utilities</h1>
