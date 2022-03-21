@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::redirect('/', '/dashboard');
+
+Route::get('/dashboard', function () {
     return view('pages.admin.dashboard');
-});
+})->name('dashboard');
 
 Route::get('/buttons', function() {
     return view('pages.admin.components.buttons');
