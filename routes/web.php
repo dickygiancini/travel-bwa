@@ -21,34 +21,36 @@ Route::get('/detail', function () {
     return view('pages.visitor.detail');
 })->name('detail');
 
-Route::get('/dashboard', function () {
-    return view('pages.admin.dashboard');
-})->name('dashboard');
+Route::as('admin.')->group(function() {
 
-Route::get('/buttons', function() {
-    return view('pages.admin.components.buttons');
-})->name('buttons');
+    Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
-Route::get('/cards', function() {
-    return view('pages.admin.components.cards');
-})->name('cards');
+    Route::get('buttons', function() {
+        return view('pages.admin.components.buttons');
+    })->name('buttons');
 
-Route::get('/colors', function() {
-    return view('pages.admin.utilities.colors');
-})->name('colors');
+    Route::get('cards', function() {
+        return view('pages.admin.components.cards');
+    })->name('cards');
 
-Route::get('/borders', function() {
-    return view('pages.admin.utilities.borders');
-})->name('borders');
+    Route::get('colors', function() {
+        return view('pages.admin.utilities.colors');
+    })->name('colors');
 
-Route::get('/animations', function() {
-    return view('pages.admin.utilities.animations');
-})->name('animations');
+    Route::get('borders', function() {
+        return view('pages.admin.utilities.borders');
+    })->name('borders');
 
-Route::get('/other', function() {
-    return view('pages.admin.utilities.other');
-})->name('other');
+    Route::get('animations', function() {
+        return view('pages.admin.utilities.animations');
+    })->name('animations');
 
-Route::get('/tables', function() {
-    return view('pages.admin.addons.tables');
-})->name('tables');
+    Route::get('other', function() {
+        return view('pages.admin.utilities.other');
+    })->name('other');
+
+    Route::get('tables', function() {
+        return view('pages.admin.addons.tables');
+    })->name('tables');
+});
+
