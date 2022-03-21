@@ -1,5 +1,7 @@
 @extends('templates.main')
 
+@section('title', 'Buttons')
+
 @section('content')
 <!-- Page Heading -->
 <h1 class="h3 mb-4 text-gray-800">Buttons</h1>
