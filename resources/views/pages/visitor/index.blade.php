@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row section-popular-travel justify-content-center">
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('assets/img/Group\ 16.png');">
+                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('{{ asset('visitor/img/Group 16.png') }}');">
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">DERATAN, BALI</div>
                         <div class="travel-button mt-auto">
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('assets/img/Group\ 17.png');">
+                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('{{ asset('visitor/img/Group 17.png') }}');">
                         <div class="travel-country">PERANCIS</div>
                         <div class="travel-location">PARIS</div>
                         <div class="travel-button mt-auto">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('assets/img/Group\ 18.png');">
+                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('{{ asset('visitor/img/Group 18.png') }}');">
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">RAJA AMPAT</div>
                         <div class="travel-button mt-auto">
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('assets/img/Group\ 19.png');">
+                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('{{ asset('visitor/img/Group 19.png') }}');">
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">DERATAN, BALI</div>
                         <div class="travel-button mt-auto">
@@ -99,7 +99,7 @@
                     <p>Perusahaan yang telah berkolaborasi dengan kami untuk pengalaman terbaik anda!</p>
                 </div>
                 <div class="col-md-8 text-center">
-                    <img src="assets/img/Partner 1.png" alt="anapartner.png" class="img-partner">
+                    <img src="{{ asset('visitor/img/Partner 1.png') }}" alt="anapartner.png" class="img-partner">
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="row section-testimonial-content d-flex justify-content-center" id="testimonialContent">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/Profilepic.png" class="card-img-top align-self-center" alt="userprofilepic.png">
+                        <img src="{{ asset('visitor/img/Profilepic.png') }}" class="card-img-top align-self-center" alt="userprofilepic.png">
                         <div class="card-body text-center">
                             <h5 class="card-title">Username</h5>
                             <p class="card-text">"Trip yang menyenangkan!"</p>
@@ -128,7 +128,7 @@
                         </div>
 
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/Profilepic.png" class="card-img-top align-self-center" alt="userprofilepic.png">
+                        <img src="{{ asset('visitor/img/Profilepic.png') }}" class="card-img-top align-self-center" alt="userprofilepic.png">
                         <div class="card-body text-center">
                             <h5 class="card-title">Username</h5>
                             <p class="card-text">"Akhirnya bisa Umroh dengan nyaman. Selain Umroh, dapat program liburan ke Tukrinya sangat bebas"</p>
@@ -139,7 +139,7 @@
                         </div>
 
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/Profilepic.png" class="card-img-top align-self-center" alt="userprofilepic.png">
+                        <img src="{{ asset('visitor/img/Profilepic.png') }}" class="card-img-top align-self-center" alt="userprofilepic.png">
                         <div class="card-body text-center">
                             <h5 class="card-title">Username</h5>
                             <p class="card-text">"Perjalanan saya pertama ke Malaysia, trip sangat nyaman dan waktu belanja dibebaskan"</p>
