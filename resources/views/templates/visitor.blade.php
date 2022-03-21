@@ -16,5 +16,7 @@
     @include('components.visitorfooter')
 
     @include('components.visitorscript')
+
+    @yield('page-scripts')
 </body>
 </html>

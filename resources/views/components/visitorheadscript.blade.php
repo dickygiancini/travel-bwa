@@ -8,3 +8,6 @@
 
 <!-- CUSTOM -->
 <link rel="stylesheet" href="{{ asset('visitor/css/main.css') }}">
+
+<link rel="stylesheet" href="{{ asset('visitor/css/ribbon.css') }}">
+<link rel="stylesheet" href="{{ asset('visitor/css/xzoom.min.css') }}">
